@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: lightyellow;
+    margin: 0;
+  }
+  .menu_row {
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em;
+  }
+  .menu_row > button {
+      min-width: 10vw;
+      min-height: 8vh;
+      background: white;
+      margin-left: auto;
+      margin-right: auto;
+      color: blue;
+      border: 1mm solid black;
+  }
+  /*------------main-------------------*/
+  #main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+  }
+  #main > article {
+      flex: 0 0 20vw;
+  }
+  #main > nav, 
+  #main > aside {
+      flex: 0 0 20vw;
+  }
+  #main > nav {
+      order: -1;
+  }
+  /*-----------------------------------*/
+  header, footer {
+      height: 20vh;
+  }
+  .registration_tab_container{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border: 1mm ridge black;
+  }
+  /*------------form-row---------------*/
+  .form-row {
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em;
+  }
+  .form-row > label {
+      padding: .5em 1em .5em 0;
+      flex: 0.6;
+  }
+  .form-row > input {
+      flex: 1;
+      padding: .5em;
+  }
+  .form-row > button {
+      min-width: 10vw;
+      min-height: 5vh;
+      background: blue;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      border: lightgray;
+  }
+  /*-----------------------------------*/
+  .text_edit{
+      display: flex;
+      justify-content: center;
+  }
+  .header_menu{
+      padding: 0em 0em 1em 1em;
+      display: flex;
+      justify-content: space-between ;
+      border-bottom: 1mm ridge black;
+      align-items: center;
+      flex-wrap: wrap;
+      background: white;
+  }
+  .btn-primary{
+      background-color: white;
+      color: black;
+      border: 0;
+  }
+  @media screen and (max-width: 1000px) {
+      #main > nav, 
+      #main > aside {
+          flex: 0 0 10vw;
+      }
+      #main > article{
+          flex: 1;
+      }
+  }
+  .btn-group{
+      padding: 1em 0em 0em 0em;
+  }
+  @media screen and (max-width: 550px) {
+      .form-row > button{
+          min-width: 45vw;
+      }
+      .menu_row > button {
+          min-width: 20vw;
+          min-height: 10vh;
+      }
+      #main{
+         flex-direction: column;
+      }
+      #main > article{
+          order: 0;
+      }
+      #main > nav{
+          order: 1;
+      }
+      #main > aside{
+          order: 2;
+      }
+  }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content ="width=device-width, initial-scale = 1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Blog page</title>
+    <link href="blog.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="header_menu">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <a href="#" class="btn btn-primary ">Home</a>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="#" class="btn btn-primary active">Blog</a>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Third group">
+                <a href="#" class="btn btn-primary" aria-current="page">User's info</a>
+            </div>
+        </div>
+        <div class="btn-toolbar justify-content-end" role="toolbar" aria-label="Toolbar with button groups (header end)">     
+            <div class="btn-group me-2" role="group" aria-label="Fourth group">
+                <a href="#" class="btn btn-primary" aria-current="page">Sign in</a>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Fifth group">
+                <a href="#" class="btn btn-primary" aria-current="page">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Say so</h1>
+        <p class="lead blog-description">Blog written by Yehor Poliakov.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Blog about blog</h2>
+            <p class="blog-post-meta">January 1, 2021 by <a href="#">Yehor</a></p>
+
+            <p>A blog (a truncation of <a href="">"weblog"</a>) is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).</p>
+            <hr>
+            <p>Posts are typically displayed in reverse chronological order,
+                 so that the most recent post appears first, at the top of the web page. Until 2009,
+                  blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic.
+                   In the 2010s, "multi-author blogs" (MABs) emerged, featuring the writing of multiple authors and sometimes professionally edited.
+                    MABs from newspapers, other media outlets, universities, think tanks, advocacy groups, and similar institutions account for an increasing quantity of blog traffic.
+                     The rise of Twitter and other "microblogging" systems helps integrate MABs and single-author blogs into the news media. Blog can also be used as a verb,
+                      meaning to maintain or add content to a blog.</p>
+            <h2>History</h2>
+            <p>The term "weblog" was coined by <a href="">Jorn Barger</a> on December 17, 1997.
+                 The short form, "blog", was coined by Peter Merholz, who jokingly broke the word weblog into the phrase we blog in the sidebar of his blog Peterme.com in April or May 1999.
+                Shortly thereafter, Evan Williams at Pyra Labs used "blog" as both a noun and verb ("to blog", meaning "to edit one's weblog or to post to one's weblog")
+                 and devised the term "blogger" in connection with Pyra Labs' Blogger product, leading to the popularization of the terms.[</p>
+            <ul>
+              <li>Bruce Ableson launched <a href="">Open Diary</a> in October 1998,
+                   which soon grew to thousands of online diaries. Open Diary innovated the reader comment,
+                    becoming the first blog community where readers could add comments to other writers' blog entries..</li>
+              <li>Brad Fitzpatrick started <a href="">LiveJournal</a> in March 1999.</li>
+              <li><a href="">Evan Williams</a> and <a href="">Meg Hourihan</a> (Pyra Labs) launched <a href="">Blogger.com</a> in August 1999 (purchased by Google in February 2003)</li>
+            </ul>
+          </div>
+          <hr>
+          <form>
+              <div class="delete_button">
+                  <button type="button" class="btn btn-primary">Delete post</button>
+              </div>
+          </form>
+          <hr>
+          <form>
+            <span class="input-group-text">Add comment</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <button type="button" class="btn btn-primary">Send</button>
+          </form>
+          <hr>
+          <h2>Comments</h2>
+          <ul class="container">
+            <li class="col-md-5">
+                <div>
+                    <div>
+                       <section >
+                            <div class="row">
+                                <div>
+                                <a href="#" class="anchor-username"><h4 class="media-heading">Yehor Poliakov</h4></a> 
+                                <a href="#" class="anchor-time">2 hours</a>
+                                </div>
+                            </div>             
+                       </section>
+                       <section class="post-body">
+                           <p>Something about this post</p>
+                       </section>
+                    </div>
+                </div>   
+            </li>
+            <hr>
+            <li class="col-md-5">
+                <div>
+                    <div>
+                       <section>
+                            <div class="row">
+                                <div class="media-body">
+                                <a href="#" class="anchor-username"><h4 class="media-heading">User-2</h4></a> 
+                                <a href="#" class="anchor-time">2 hours</a>
+                                </div>
+                            </div>             
+                       </section>
+                       <section>
+                           <p>Something else about this post</p>
+                       </section>
+                    </div>
+                </div>   
+            </li> 
+          <hr>
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous post</a></li>
+              <li><a href="#">Next post</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About </h4>
+            <p>Information <em>about us</em> by <a href="">link </a>.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2021</a></li>
+              <li><a href="#">February 2021</a></li>
+              <li><a href="#">January 2021</a></li>
+              <li><a href="#">December 2020</a></li>
+              <li><a href="#">November 2020</a></li>
+              <li><a href="#">October 2020</a></li>
+              <li><a href="#">September 2020</a></li>
+              <li><a href="#">August 2020</a></li>
+              <li><a href="#">July 2020</a></li>
+              <li><a href="#">June 2020</a></li>
+              <li><a href="#">May 2020</a></li>
+              <li><a href="#">April 2020</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="blog-footer"></footer>
+  </body>
+</html>
