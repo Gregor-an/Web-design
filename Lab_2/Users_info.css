@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: lightyellow;
+    margin: 0;
+}
+    .header_menu{
+        padding: 0em 0em 1em 1em;
+        display: flex;
+        justify-content: space-between ;
+        border-bottom: 1mm ridge black;
+        background-color: white;
+    }
+    .btn-group{
+        padding: 1em 0em 0em 0em;
+    }
+    .btn-primary{
+        background-color: white;
+        color: black;
+        border: 0;
+    }
+  /*------------media------------------*/
+  .media {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+  }
+  /*------------main-------------------*/
+  #main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      flex: 1;
+    }
+    #main > article {
+        flex: 0 0 20vw;
+    }
+  #main > nav, 
+  #main > aside {
+      flex: 0 0 20vw;
+  }
+  #main > nav {
+      order: -1;
+  }
+  /*-----------------------------------*/
+  header, footer {
+      height: 20vh;
+  }
+  .user_info_container{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border: 1mm ridge black;
+      
+  }
+  /*------------form-row---------------*/
+  .form-row {
+      display: flex;
+      justify-content: flex-start;
+      padding: .5em;
+  }
+  .form-row > label{
+      flex: 1;
+  } 
+  /*-----------------------------------*/
+  .text_edit{
+      display: flex;
+      justify-content: center;
+  }
+  .item {
+      width: 20vw;
+      height: 10vh;
+      margin: 0 5px;
+  }
+  .form-row > button {
+      min-width: 5vw;
+      min-height: 5vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #text_edit{
+        display: flex;
+        flex: 1;
+        font-size: mediu;
+        color: red;
+        justify-content: flex-end;
+    }
+  @media screen and (max-width: 1000px) {
+      #main > nav, 
+      #main > aside {
+          flex: 0 0 20vw;
+      }
+      #main > article{
+          flex: 1;
+      }
+    }
+  
+  @media screen and (max-width: 550px) {
+      
+      #main{
+         flex-direction: column;
+      }
+      #main > article{
+          order: 0;
+      }
+      #main > nav{
+          order: 1;
+      }
+      #main > aside{
+          order: 2;
+      }
+      
+    }
